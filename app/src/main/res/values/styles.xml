@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="TextAppearance.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="MoreButton">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+        <item name="android:textColor">@color/more_button_text</item>
+        <item name="android:textSize">@dimen/app_text_size_small</item>
+        <item name="android:background">@drawable/more_button_background</item>
+    </style>
+    <style name="TextAppearance.SessionTitle" parent="TextAppearance.Body2">
+        <item name="android:textColor">@color/video_title</item>
+    </style>
+    <style name="TextAppearance.Body2" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">14sp</item> <!-- bug in AppCompat, can remove this when it's fixed -->
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="Body1Text">
+        <item name="android:textAppearance">@style/TextAppearance.Body1</item>
+        <item name="android:lineSpacingMultiplier">@dimen/body_1_spacing</item>
+    </style>
+    <style name="TextAppearance.Body1" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">14sp</item> <!-- bug in AppCompat, can remove this when it's fixed -->
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="SessionTimeHint" parent="TextBody">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/body_text_2</item>
+    </style>
+    <style name="TextBody">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/body_text_1</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+    <style name="TextAppearance.Subhead" parent="TextAppearance.Body2">
+        <item name="android:textColor">@color/item_text_primary_color</item>
+    </style>
+    <style name="ActionBarThemeOverlay" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/text_on_primary</item>
+        <item name="android:textColorSecondary">@color/subtitle_on_primary</item>
+        <item name="actionMenuTextColor">@color/text_on_primary</item>
+    </style>
+
+    <style name="SearchViewTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/app_body_text_1</item>
+        <item name="colorControlNormal">@color/app_body_text_2</item>
+        <item name="colorControlActivated">@color/theme_accent_1</item>
+    </style>
+
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SessionDetailsTitle">
+        <item name="android:textAppearance">@style/TextAppearance.Title</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingMultiplier">@dimen/h3_spacing</item>
+    </style>
+    <style name="SessionDetailsSubtitle" parent="@style/Body1Text">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="SessionLiveStreamed">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/session_livestreamed_color</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <!-- Empty views -->
+    <style name="EmptyText">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/body_text_disabled</item>
+    </style>
+    <style name="InstallText">
+        <item name="android:textColor">@color/text_on_primary</item>
+    </style>
+</resources>
